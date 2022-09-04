@@ -17,8 +17,8 @@ body {
 
 header {
   width: 100%;
-  position: fixed;
   background: #0A0909;
+  display: flex;
 }
 header h1 {
   color: white;
@@ -34,8 +34,4 @@ header h1 {
   margin-top: 25px;
   margin-left: 6%;
   margin-bottom: 10px;
-}
-
-.deleteAfter {
-  text-align: center;
 }/*# sourceMappingURL=style.css.map */

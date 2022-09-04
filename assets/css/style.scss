@@ -17,15 +17,12 @@ body {
 
 header{
   width: 100%;
-  position: fixed;
   background: #0A0909;
-  //display: flex;
+  display: flex;
   h1{
     color: white;
     font-size: 45px;
-   // text-align: center;
     margin-left: 50px;
-    // dsdsds
   }
 }
 
@@ -37,8 +34,4 @@ header{
     margin-top: 25px;
     margin-left: 6%;
     margin-bottom: 10px;
-}
-
-.deleteAfter {
-  text-align: center;
 }
