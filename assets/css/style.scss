@@ -56,17 +56,10 @@ header {
   }
 }
 
-
-
-
-
-
 .container {
   margin: 0 auto;
   background: black;
 }
-
-
 
 .header_logo {
   text-transform: uppercase;
@@ -76,4 +69,63 @@ header {
   margin-top: 25px;
   margin-left: 6%;
   margin-bottom: 10px;
+}
+
+.offers_container {
+  margin-top: 15px;
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  img {
+    width: 1270px;
+    height: auto;
+  }
+  .offers
+  {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: -12px;
+    right: 10%;
+    left: 10%;
+    gap: 35px;
+    color: #FEFEFE;
+
+    .offer {
+      display: block;
+      width: 300px;
+      height: 250px;
+      h3 {
+        margin: 5px;
+        text-align: center;
+        
+      }
+      p {
+        margin: 15px;
+        text-align: justify;
+      }
+      img {
+        margin: 10px;
+        width: 64px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .orange {
+      background-color: #EA660F;
+    }
+    .blue {
+      background-color: #6CA1D8;
+    }
+    .red {
+      background-color: #FA3600;
+    }
+
+  }
 }
