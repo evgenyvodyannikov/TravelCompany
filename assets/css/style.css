@@ -74,7 +74,7 @@ header img {
   position: relative;
 }
 .offers_container img {
-  width: 1270px;
+  width: 100%;
   height: auto;
 }
 .offers_container .offers {
@@ -83,7 +83,7 @@ header img {
   align-items: center;
   justify-content: flex-end;
   position: absolute;
-  bottom: -12px;
+  bottom: -15px;
   right: 10%;
   left: 10%;
   gap: 35px;
@@ -112,10 +112,32 @@ header img {
 }
 .offers_container .offers .orange {
   background-color: #EA660F;
+  opacity: 0.9;
 }
 .offers_container .offers .blue {
   background-color: #6CA1D8;
+  opacity: 0.9;
 }
 .offers_container .offers .red {
   background-color: #FA3600;
+  opacity: 0.9;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5px;
+}
+section article {
+  border: 2px solid rgba(51, 51, 51, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+section article > h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
