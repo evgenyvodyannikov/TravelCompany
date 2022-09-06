@@ -21,7 +21,8 @@ body {
 }
 
 body{
-  padding: 1rem;
+  padding: 0px;
+  margin: 0px;
 }
 
 header {
@@ -29,13 +30,13 @@ header {
   background: #282A30;
   display: grid;
   grid-template-columns: 2fr 9fr;
-
+  align-items: center;
   nav > ul {
     list-style-type: none;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 25px;
+    padding-right: 25px;
   }
 
   nav > ul > li > a {
@@ -47,61 +48,49 @@ header {
   }
 
   nav ul li a:hover {
-    color: #FA3600;
+    color: #cf5c88;
   }
 
   img {
-    width: 70px;
+    width: 70%;
     height: auto;
+    padding: 10px;
   }
 }
 
-.container {
-  margin: 0 auto;
-  background: black;
-}
-
-.header_logo {
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 800;
-  font-size: 42px;
-  margin-top: 25px;
-  margin-left: 6%;
-  margin-bottom: 10px;
-}
-
 .offers_container {
-  margin-top: 15px;
   display: block;
   align-items: center;
-  justify-content: space-around;
   position: relative;
+
   img {
     width: 100%;
     height: auto;
   }
+  
   .offers
   {
     list-style-type: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    bottom: -15px;
+    bottom: -50px;
     right: 10%;
     left: 10%;
     gap: 35px;
     color: #FEFEFE;
 
+
     .offer {
       display: block;
-      width: 300px;
-      height: 250px;
+      align-items: center;
+      //width: 80%;
+      height: 270px;
       h3 {
         margin: 5px;
         text-align: center;
-        
       }
       p {
         margin: 15px;
@@ -109,7 +98,7 @@ header {
       }
       img {
         margin: 10px;
-        width: 64px;
+        width: 30%;
         height: auto;
         display: block;
         margin-left: auto;
@@ -118,15 +107,18 @@ header {
     }
 
     .orange {
-      background-color: #EA660F;
+    //  background-color: #e99050;
+    background-color: #cf5c88de;
       opacity: 0.9;
     }
     .blue {
-      background-color: #6CA1D8;
+    //  background-color: #6CA1D8;
+    background-color: #cf5c88de;
       opacity: 0.9;
     }
     .red {
-      background-color: #FA3600;
+    //  background-color: #cf5c88;
+    background-color: #cf5c88de;
       opacity: 0.9;
     }
 
@@ -137,6 +129,7 @@ section{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 5px;
+  color: #fff;
   article{
     border: 2px solid rgba(51,51,51, 0.5);
     border-radius: 10px;
@@ -148,6 +141,31 @@ section{
   }
 }
 
+.list1 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  color: #FEFEFE;
+  
+  h1{
+    font-size: 50px;
+    line-height: 90%;
+    text-transform: uppercase;
+    padding: 0 100px 0 100px;
+  }
+  h2{
+    padding: 15px 100px 0 100px;
+  }
+  p{
+    text-align:inherit;
+    padding: 15px 80px 0 100px;
+  }
+  img{
+    width: 40%;
+    height: auto;
+  }
+}
 
 
 
@@ -158,4 +176,5 @@ section{
 
 footer{
   text-align: center;
+  color: white;
 }
