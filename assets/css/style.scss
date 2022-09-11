@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200,300;400;700;900&display=swap');
 
 *,
 *:after,
@@ -56,22 +57,31 @@ header {
 }
 
 .info {
-  img {
+  position: relative;
+  text-align: center;
+  color: white;
+  > img {
     width: 100%;
     height: auto;
   }
+  > div {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+}
 }
 
-.offers_container {
+.offers_page {
   display: block;
   align-items: center;
   position: relative;
   margin: -200px 0px 0px 0px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 200px 0px 200px;
 
-  .offers
+  .offers_list
   {
-    list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -83,31 +93,29 @@ header {
       display: block;
       align-items: center;
       background-color: #cf5c88de;
+      box-shadow: 0px 13px 19px rgba(0,0,0, 0.07);
       opacity: 0.9;
-      //width: 80%;
-      height: 270px;
+      height: 100%;
       h3 {
-        margin: 5px;
+        padding: 5px;
         text-align: center;
       }
       p {
-        margin: 15px;
+        padding: 15px;
         text-align: justify;
       }
       img {
-        margin: 10px;
-        width: 30%;
+        width: 40%;
         height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
-      
     }
   }
 }
 
-section{
+.section1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 5px;
@@ -123,35 +131,38 @@ section{
   }
 }
 
-.list1 {
-  margin-top: 50px;
+.adventure_pg_01 {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding: 25px 300px 0 300px;
   align-items: center;
   color: #FEFEFE;
-  
+  .adventure_counter{
+    padding: 100px 150px 0 0;
+    > h1{
+      text-align: right;
+      font-size: 21.75rem;
+      font-weight: 900;
+      font-family: Roboto;
+    }
+  }
   h1{
     font-size: 50px;
     line-height: 90%;
     text-transform: uppercase;
-    padding: 0 100px 0 100px;
   }
   h2{
-    padding: 15px 100px 0 100px;
+    margin-top: 15px;
   }
   p{
     text-align:inherit;
-    padding: 15px 80px 0 100px;
+    margin-top: 15px;
   }
   img{
     width: 40%;
     height: auto;
   }
 }
-
-
-
-
 
 
 

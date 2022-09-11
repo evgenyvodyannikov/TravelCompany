@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200,300;400;700;900&display=swap");
 *,
 *:after,
 *:before {
@@ -54,20 +55,31 @@ header img {
   padding: 10px;
 }
 
-.info img {
+.info {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.info > img {
   width: 100%;
   height: auto;
 }
+.info > div {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+}
 
-.offers_container {
+.offers_page {
   display: block;
   align-items: center;
   position: relative;
   margin: -200px 0px 0px 0px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 200px 0px 200px;
 }
-.offers_container .offers {
-  list-style-type: none;
+.offers_page .offers_list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -75,67 +87,75 @@ header img {
   gap: 35px;
   color: #FEFEFE;
 }
-.offers_container .offers .offer {
+.offers_page .offers_list .offer {
   display: block;
   align-items: center;
   background-color: rgba(207, 92, 136, 0.8705882353);
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   opacity: 0.9;
-  height: 270px;
+  height: 100%;
 }
-.offers_container .offers .offer h3 {
-  margin: 5px;
+.offers_page .offers_list .offer h3 {
+  padding: 5px;
   text-align: center;
 }
-.offers_container .offers .offer p {
-  margin: 15px;
+.offers_page .offers_list .offer p {
+  padding: 15px;
   text-align: justify;
 }
-.offers_container .offers .offer img {
-  margin: 10px;
-  width: 30%;
+.offers_page .offers_list .offer img {
+  width: 40%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-section {
+.section1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 5px;
   color: #fff;
 }
-section article {
+.section1 article {
   border: 2px solid rgba(51, 51, 51, 0.5);
   border-radius: 10px;
   padding: 10px;
 }
-section article > h2 {
+.section1 article > h2 {
   font-size: 20px;
   font-weight: 600;
 }
 
-.list1 {
-  margin-top: 50px;
+.adventure_pg_01 {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding: 25px 300px 0 300px;
   align-items: center;
   color: #FEFEFE;
 }
-.list1 h1 {
+.adventure_pg_01 .adventure_counter {
+  padding: 100px 150px 0 0;
+}
+.adventure_pg_01 .adventure_counter > h1 {
+  text-align: right;
+  font-size: 21.75rem;
+  font-weight: 900;
+  font-family: Roboto;
+}
+.adventure_pg_01 h1 {
   font-size: 50px;
   line-height: 90%;
   text-transform: uppercase;
-  padding: 0 100px 0 100px;
 }
-.list1 h2 {
-  padding: 15px 100px 0 100px;
+.adventure_pg_01 h2 {
+  margin-top: 15px;
 }
-.list1 p {
+.adventure_pg_01 p {
   text-align: inherit;
-  padding: 15px 80px 0 100px;
+  margin-top: 15px;
 }
-.list1 img {
+.adventure_pg_01 img {
   width: 40%;
   height: auto;
 }
