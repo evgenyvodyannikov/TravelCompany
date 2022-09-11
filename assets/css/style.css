@@ -54,14 +54,17 @@ header img {
   padding: 10px;
 }
 
+.info img {
+  width: 100%;
+  height: auto;
+}
+
 .offers_container {
   display: block;
   align-items: center;
   position: relative;
-}
-.offers_container img {
-  width: 100%;
-  height: auto;
+  margin: -200px 0px 0px 0px;
+  padding: 0px 20px 0px 20px;
 }
 .offers_container .offers {
   list-style-type: none;
@@ -69,16 +72,14 @@ header img {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: flex-end;
-  position: absolute;
-  bottom: -50px;
-  right: 10%;
-  left: 10%;
   gap: 35px;
   color: #FEFEFE;
 }
 .offers_container .offers .offer {
   display: block;
   align-items: center;
+  background-color: rgba(207, 92, 136, 0.8705882353);
+  opacity: 0.9;
   height: 270px;
 }
 .offers_container .offers .offer h3 {
@@ -96,18 +97,6 @@ header img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.offers_container .offers .orange {
-  background-color: rgba(207, 92, 136, 0.8705882353);
-  opacity: 0.9;
-}
-.offers_container .offers .blue {
-  background-color: rgba(207, 92, 136, 0.8705882353);
-  opacity: 0.9;
-}
-.offers_container .offers .red {
-  background-color: rgba(207, 92, 136, 0.8705882353);
-  opacity: 0.9;
 }
 
 section {

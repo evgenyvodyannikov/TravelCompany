@@ -38,7 +38,6 @@ header {
     gap: 25px;
     padding-right: 25px;
   }
-
   nav > ul > li > a {
     display: block;
     text-transform: uppercase;
@@ -46,11 +45,9 @@ header {
     color: #FEFEFE;
     transition: color 0.4s ease-in-out;
   }
-
   nav ul li a:hover {
     color: #cf5c88;
   }
-
   img {
     width: 70%;
     height: auto;
@@ -58,16 +55,20 @@ header {
   }
 }
 
-.offers_container {
-  display: block;
-  align-items: center;
-  position: relative;
-
+.info {
   img {
     width: 100%;
     height: auto;
   }
-  
+}
+
+.offers_container {
+  display: block;
+  align-items: center;
+  position: relative;
+  margin: -200px 0px 0px 0px;
+  padding: 0px 20px 0px 20px;
+
   .offers
   {
     list-style-type: none;
@@ -75,17 +76,14 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    bottom: -50px;
-    right: 10%;
-    left: 10%;
     gap: 35px;
     color: #FEFEFE;
-
 
     .offer {
       display: block;
       align-items: center;
+      background-color: #cf5c88de;
+      opacity: 0.9;
       //width: 80%;
       height: 270px;
       h3 {
@@ -104,24 +102,8 @@ header {
         margin-left: auto;
         margin-right: auto;
       }
+      
     }
-
-    .orange {
-    //  background-color: #e99050;
-    background-color: #cf5c88de;
-      opacity: 0.9;
-    }
-    .blue {
-    //  background-color: #6CA1D8;
-    background-color: #cf5c88de;
-      opacity: 0.9;
-    }
-    .red {
-    //  background-color: #cf5c88;
-    background-color: #cf5c88de;
-      opacity: 0.9;
-    }
-
   }
 }
 
